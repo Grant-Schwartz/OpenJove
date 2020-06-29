@@ -2,7 +2,7 @@
 
 ## Vision
 
-Provide an open source website/service to record, store, and interact with data from the Radio Jove telescope.
+Provide an open source website/service to record, store, and interact with data the Radio Jove telescopes.
 
 ## Arcitecture
 
