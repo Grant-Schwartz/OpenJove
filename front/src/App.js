@@ -3,21 +3,20 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Home from 'Pages/Home';
 import Record from 'Pages/Record';
+import Upload from 'Pages/Upload';
 
 function App() {
   return (
     <Router>
       <Nav />
       <Switch>
+        <Route path="/record" component={Record} exact />
+        <Route path="/upload" component={Upload} exact />
         <Route path="/">
           <Home />
-        </Route>
-        <Route path="/record">
-          <Record />
         </Route>
       </Switch>
     </Router>

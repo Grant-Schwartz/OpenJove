@@ -21,7 +21,8 @@ const Header = {
     fontSize: '36px',
     lineHeight: '44px',
     letterSpacing: '-0.05em',
-    color: '#000'
+    color: '#000',
+    margin: 0
 }
 
 const SubHeader = {
@@ -30,7 +31,8 @@ const SubHeader = {
     fontSize: '24px',
     lineHeight: '29px',
     letterSpacing: '-0.02em',
-    color: '#000'
+    color: '#000',
+    margin: 0
 }
 
 const SubTitle = {
@@ -39,7 +41,8 @@ const SubTitle = {
     fontSize: '24px',
     lineHeight: '29px',
     letterSpacing: '-0.02em',
-    color: '#000'
+    color: '#000',
+    margin: 0
 }
 
 const Body = {
@@ -65,6 +68,13 @@ const PageWrapper = {
     paddingRight: '20px'
 }
 
+const CardWrapper = {
+    border: `2px solid ${Colors.shade}`,
+    borderRadius: 10,
+    marginTop: '30px',
+    padding: '20px'
+}
+
 export const GlobalStyles = {
     Colors: Colors,
     Header: Header,
@@ -72,5 +82,6 @@ export const GlobalStyles = {
     SubTitle: SubTitle,
     Body: Body,
     Logo: Logo,
-    PageWrapper: PageWrapper
+    PageWrapper: PageWrapper,
+    CardWrapper: CardWrapper
 }

@@ -57,7 +57,9 @@ const styles = {
         border: '2px solid rgba(0,0,0,0.075)',
         margin: 0,
         padding: 10,
-        borderRadius:10
+        borderRadius:10,
+        zIndex: 3,
+        backgroundColor: '#fff'
     }
 }
 
@@ -111,7 +113,7 @@ function Nav() {
     const [collapseOpen, setCollapseOpen] = useState(false);
     return (
         <div style={styles.nav}>
-            <a style={styles.navLogo} href="/">
+            <a style={styles.navLogo} href="/" data-testid="nav-logo-link">
                 <img alt="Logo" src={small_logo} style={{height:'50px'}} />
                 <span style={{...GlobalStyles.Logo, ...styles.navLogoText}}>Open Jove</span>
             </a>
