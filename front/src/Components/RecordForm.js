@@ -58,8 +58,8 @@ export const RecordForm = ({setCurrentScreen, setRecordingName, setAuthor, setOb
             <TextInput id="author-name" formError={error} required={true} placeholder="Author Name" type="text" label="Author Name" />
 
             <Dropdown id="celestial-body" options={{'Sun':'The Sun','Galactic Backround':'Galactic Background','Interference':'Interference','Solar Eclipse':'A Solar Eclipse','Jupiter':'Jupiter'}} label="Observing"/>
-            <TextInput id="reciever-details" formError={error} required={true} placeholder="Reciever Details" type="text" label="Receiver System" />
-            <TextInput id="reciever-location" formError={error} required={true}  placeholder="Address" type="text" label="Reciever Location" />
+            <TextInput id="reciever-details" formError={error} required={true} placeholder="Receiver Details" type="text" label="Receiver System" />
+            <TextInput id="reciever-location" formError={error} required={true}  placeholder="Address" type="text" label="Receiver Location" />
             <Dropdown id="calibrated" options={{'yes':'Yes','no':'No'}} label="Calibrated"/>
             <TextArea id="notes" formError={error} required={false}  label="Recording Notes" />
             <button

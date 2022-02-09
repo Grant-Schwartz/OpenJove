@@ -1,0 +1,25 @@
+.accordion-item.collapsed {
+  display: none;
+}
+
+.accordion-item.expanded {
+  display: block;
+  margin-bottom:20px;
+}
+
+.accordion-button {
+  display: block;
+  width: 100%;
+  border: 2px solid rgba(0,0,0,0.075);
+  background-color: transparent;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom:10px;
+}
+
+.accordion-button.expanded {
+    background-color: rgba(0, 111, 250, 1);
+    color: #fff;
+}

@@ -100,5 +100,12 @@ def upload_recordings():
 		json.dump(json_data, outfile, cls=JSONEncoder)
 	return make_response(jsonify({'message':'Recording succesfully uploaded','rid':rid}),200)
 
+@app.route('/recordings/<rid>')
+def recording(rid):
+	f = open (os.path.join(app.config['OJF_UPLOAD_FOLDER'], f'{rid}.json'), "r")
+	# Reading from file
+	data = json.loads(f.read())
+	return make_response(jsonify(data),200)
+	
 if __name__ == '__main__':
 	app.run(debug=True,port=5000)

@@ -23,3 +23,11 @@ export const uploadSPD = async (file) => {
     let resp = await response.json();
     return resp;
 }
+
+export const getRecording = async (rid) => {
+    let response = await fetch(`/recordings/${rid}`,{
+        method: 'GET',
+    });
+    let resp = await response.json();
+    return resp;
+}

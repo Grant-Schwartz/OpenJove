@@ -118,7 +118,7 @@ function Nav() {
                 <span style={{...GlobalStyles.Logo, ...styles.navLogoText}}>Open Jove</span>
             </a>
             <div style={mq ? (collapseOpen ? styles.collapsedNavItemsOpen : styles.collapsedNavItems) : null}>
-                <NavLink mq={mq} text="View Recordings" url="/view"/>
+                {/* <NavLink mq={mq} text="View Recordings" url="/view"/> */}
                 <NavLinkBtn mq={mq} bgColor={GlobalStyles.Colors.primary} url="/record" text="Record" />
                 <NavLinkBtn mq={mq} bgColor={GlobalStyles.Colors.secondary} url="/upload" text="Upload" />
             </div>
